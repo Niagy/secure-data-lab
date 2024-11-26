@@ -2,7 +2,7 @@
 name: Deploy Workflow
 
 on:
-  push: true
+  push:
     branches:
       - main
 
