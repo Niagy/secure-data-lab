@@ -15,6 +15,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      # Step 2: Print API_KEY secret
+      # Step 2: Print API_KEY secret test
       - name: Print API_KEY
         run: "echo 'API_KEY: ${{ secrets.API_KEY }}'"
