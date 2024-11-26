@@ -1,0 +1,20 @@
+---
+name: Deploy Workflow
+
+on:
+  push: true
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      # Step 2: Print API_KEY secret
+      - name: Print API_KEY
+        run: echo "API_KEY: ${{ secrets.API_KEY }}"
