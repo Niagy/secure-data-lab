@@ -17,4 +17,4 @@ jobs:
 
       # Step 2: Print API_KEY secret
       - name: Print API_KEY
-        run: echo "API_KEY: ${{ secrets.API_KEY }}"
+        run: "echo 'API_KEY: ${{ secrets.API_KEY }}'"
